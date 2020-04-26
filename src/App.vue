@@ -20,6 +20,6 @@ export default {
 </script>
 <style>
 @import './assets/css/main.scss';
-@import './assets/css/color-dark.css'; /*深色主题*/
-/*@import "./assets/css/theme-green/color-green.css";   浅绿色主题*/
+ /*@import './assets/css/color-dark.css';深色主题*/
+@import "./assets/css/theme-blue/color-blue.css"; /*  浅色主题*/
 </style>

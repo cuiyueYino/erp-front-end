@@ -4,9 +4,7 @@
             class="sidebar-el-menu"
             :default-active="onRoutes"
             :collapse="collapse"
-            background-color="#324157"
-            text-color="#bfcbd9"
-            active-text-color="#20a0ff"
+           
             unique-opened
             @select="handleSelect"
         >
@@ -73,7 +71,7 @@ function convertRouteToMenuItem({ children, meta, name, path }, parentPath) {
 export default {
     data() {
         return {
-            collapse: false
+            collapse: true
         };
     },
     inject: ['bus'],

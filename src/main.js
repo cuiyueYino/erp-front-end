@@ -2,20 +2,20 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
-// import './assets/css/theme-green/index.css'; // 浅绿色主题
+// import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
+import './assets/css/theme-blue/index.css'; // 浅绿色主题
 import './assets/css/icon.css';
 import './components/common/directives';
 import 'babel-polyfill';
 import store from './store';
-import message from './components/common/message/index';
+// import message from './components/common/message/index';
 import comInstall from './components/common/index';
 import api from './model/api'; // 导入api接口
 
 Vue.config.productionTip = false;
 Vue.use(comInstall);
 Vue.use(ElementUI);
-Vue.prototype.$message = message;
+// Vue.prototype.$message = message;
 Vue.prototype.$api = api;
 
 //使用钩子函数对路由进行权限跳转

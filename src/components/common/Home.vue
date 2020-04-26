@@ -19,8 +19,9 @@
 <script>
 import vHead from './Header.vue';
 import vSidebar from './Sidebar.vue';
-import vTags from './Tags.vue';
+import vTags from './Tags.vue'; 
 export default {
+    name:'Home',
     data() {
         return {
             tagsList: [],
@@ -33,6 +34,7 @@ export default {
         vSidebar,
         vTags
     },
+    
     created() {
         console.log(this.Bus);
         this.bus.$on('collapse-content', msg => {

@@ -12,7 +12,7 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            redirect: '/tabs',
+            // redirect: '/tabs',
             component: () => import(/* webpackChunkName: "home" */ '../components/common/Home.vue'),
             meta: {
                 title: ''
@@ -36,6 +36,11 @@ export default new Router({
             meta: {
                 title: '登录'
             }
-        }
+        },
+        {
+            path: '/404',
+            component: () => import('../components/page/404.vue'),
+            hidden: true
+        },
     ]
 });

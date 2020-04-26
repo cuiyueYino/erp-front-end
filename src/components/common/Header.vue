@@ -54,9 +54,10 @@
 </template>
 <script>
 export default {
+    name:'Header',
     data() {
         return {
-            collapse: false,
+            collapse: true,
             fullscreen: false,
             name: '系统管理员',
             message: 2
@@ -135,7 +136,7 @@ export default {
 .header .logo {
     /* background: url(../../assets/img/loginLogo.png); */
     float: left;
-    color: skyblue;
+    color: #dfefff;
     line-height: 70px;
 }
 .header-right {
