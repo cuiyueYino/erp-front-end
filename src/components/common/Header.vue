@@ -57,7 +57,7 @@ export default {
     name:'Header',
     data() {
         return {
-            collapse: true,
+            collapse: false,
             fullscreen: false,
             name: '系统管理员',
             message: 2

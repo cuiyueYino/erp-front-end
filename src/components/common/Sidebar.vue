@@ -71,7 +71,7 @@ function convertRouteToMenuItem({ children, meta, name, path }, parentPath) {
 export default {
     data() {
         return {
-            collapse: true
+            collapse: false
         };
     },
     inject: ['bus'],
@@ -89,19 +89,25 @@ export default {
         }
     },
     created() {
-        // 通过 Event Bus 进行组件间通信，来折叠侧边栏
+        // // 通过 Event Bus 进行组件间通信，来折叠侧边栏
+        // this.bus.$on('collapse', msg => {
+        //     this.collapse = msg;
+        //     this.bus.$emit('collapse-content', msg);
+        // });
+    },
+    mounted() {
         this.bus.$on('collapse', msg => {
             this.collapse = msg;
             this.bus.$emit('collapse-content', msg);
         });
     },
-    mounted() {},
     methods: {
         handleSelect(index) {
             this.$router.push({
                 name: index
             });
-        }
+        },
+       
     }
 };
 </script>
